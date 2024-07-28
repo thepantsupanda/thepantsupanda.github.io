@@ -36,11 +36,12 @@
 }
 
 body {
-    background-color: darkslateblue;
+    background-color: #6250A0;
     color: white;
     font-family: 'Hurmit';
-    display: flex;
-    justify-content: center;
+    overflow-x: hidden;
+    /* display: flex;
+    justify-content: center; */
 }
 
 a {
@@ -49,7 +50,45 @@ a {
 
 #mainSection {
     /* background-color: red; */
-    width: 60%;
+    float: left;
+    width: 65%;
+    padding: 1% 2% 2% 2%;
+    -webkit-animation: fadeIn 2s 1 normal ease-out;
+    animation: fadeIn 2s 1 normal ease-out;
+}
+
+#sideImg {
+    position: relative;
+    float: right;
+    width: 30%;
+    left: 0px;
+    -webkit-animation: floatSide 1s 1 normal ease-out;
+    animation: floatSide 1s 1 normal ease-out;
+}
+
+@-webkit-keyframes floatSide {
+    0% {
+        left:600px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes floatSide {
+    0% {
+        left:600px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* #header {
