@@ -52,6 +52,9 @@ h1 {
     text-align: center;
 }
 
+#header {
+}
+
 #mainSection {
     /* background-color: red; */
     float: left;
@@ -74,8 +77,8 @@ h1 {
     display: table-cell;
     position: absolute;
     border: 4px solid white;
-    width: 7%;
-    height: 5%;
+    width: 130px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
     border-radius: 20px;
