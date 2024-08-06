@@ -35,10 +35,15 @@
     font-weight: 700;
 }
 
-body {
-    background-color: #42386B;
+*, *::before, *::after {
     color: white;
     font-family: 'Hurmit';
+}
+
+body {
+    /* background-color: #42386B; */
+    background: linear-gradient(#42386B, #000000);
+    background-attachment: fixed;
     overflow-x: hidden;
     /* display: flex;
     justify-content: center; */
