@@ -1,3 +1,5 @@
+/* GENERAL STUFF */
+
 @font-face {
     font-family: 'Hurmit';
     src: url(fonts/Hurmit/HurmitNerdFont-Regular.otf) format('opentype');
@@ -36,102 +38,168 @@
 }
 
 *, *::before, *::after {
-    color: white;
-    font-family: 'Hurmit';
+    box-sizing: border-box;
+    margin: 0;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Hurmit'; */
+    font-family: 'Hurmit', sans-serif;
+    overscroll-behavior: none;
 }
 
-body {
-    /* background-color: #42386B; */
-    background: linear-gradient(#42386B, #000000);
-    background-attachment: fixed;
-    overflow-x: hidden;
-    /* display: flex;
-    justify-content: center; */
+html, body {
+    height: 100%;
+}
+
+.pageContainer {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 
 a {
     color: #F692C9;
 }
 
-h1 {
+h2 {
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+hr {
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ul {
+    padding-bottom: 2%;
+}
+
+/* HEADER SECTION */
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 0.2em solid black;
+    flex: 0 1 auto;
+    z-index: 1;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.5em;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonRow > a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
     text-align: center;
+    background-color: white;
+    width: 7em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
 }
 
-#mainSection {
-    /* background-color: red; */
-    float: left;
-    width: 65%;
-    padding: 1% 2% 2% 2%;
-    -webkit-animation: fadeIn 2s 1 normal ease-out;
-    animation: fadeIn 2s 1 normal ease-out;
+.button:not(.currentTab):hover {
+    background-color: rgba(200,200,200,1);
 }
 
-#sideImg {
-    position: relative;
-    float: right;
-    width: 30%;
-    left: 0px;
-    -webkit-animation: floatSide 1s 1 normal ease-out;
-    animation: floatSide 1s 1 normal ease-out;
+.buttonRow > .button + .button {
+    border-left: 2px solid rgba(200,200,200,1);
 }
 
-#backButton {
-    display: table-cell;
-    position: absolute;
-    border: 4px solid white;
-    width: 130px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 20px;
-    background-color: #42386B;
+.currentTab {
+    background-color: black;
     color: white;
 }
 
-#backButton:hover {
-    -webkit-animation: buttonFade .2s 1 normal ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation: buttonFade .2s 1 normal ease-in-out;
-    animation-fill-mode: forwards;
+/* MAIN CONTENT SECTION */
+
+.mainSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    height: 100%;
+    overflow: auto;
+    z-index: 100;
 }
 
-@-webkit-keyframes floatSide {
-    0% {
-        left:600px;
-    }
-    100% {
-        left: 0px;
-    }
-}
-@keyframes floatSide {
-    0% {
-        left:600px;
-    }
-    100% {
-        left: 0px;
-    }
-}
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-webkit-keyframes buttonFade {
-    0% { background-color: #42386B; }
-    100% { background-color: #F692C9; }
-}
-@keyframes buttonFade {
-    0% { background-color: #42386B; }
-    100% { background-color: #F692C9; }
+.content {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 55%;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 1rem;
 }
 
-/* #header {
-    background-color: aqua;
+.article {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 70%;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 1rem;
 }
 
-#articleList {
-    background-color: blueviolet;
-} */
+/* BACKGROUND SECTION */
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.sunset {
+    display: block;
+    position: absolute;
+    background: linear-gradient(rgba(230,100,101, 0.5), rgba(145,152,229,1));
+    height: 100%;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    background-color: white;
+}
+
+/* GIF IMAGE */
+
+.imagecontainer {
+    position: absolute;
+    top: 10em;
+    height: 50%;
+    width: 97%;
+    text-align: right;
+}
+
+#sideimg {
+    height: 100%;
+}

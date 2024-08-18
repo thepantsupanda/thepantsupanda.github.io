@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Learning How To Learn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda's Page</title>
     <link rel="stylesheet" href="../../styles.css">
-    <script src="scripts.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="mainSection">
-        <div id="header">
-            <a href="../../index.html"><div id="backButton"><p>◄ Back Home</p></div></a>
-            <h1>Panda's Page</h1>
-            <hr>
+    <div class="pageContainer">
+        <div class="header">
+            <p class="title">Panda's Page</p>
+            <div class="buttonRow">
+                <a href="../../index.html">
+                    <div class="button"><p>HOME</p></div>
+                </a>
+                <a href="../../articles.html">
+                    <div class="button currentTab"><p>ARTICLES</p></div>
+                </a>
+                <a href="../../toys.html">
+                    <div class="button"><p>TOYS</p></div>
+                </a>
+                <a href="https://github.com/thepantsupanda" target="_blank">
+                    <div class="button"><p>GITHUB</p></div>
+                </a>                
+            </div>
         </div>
-        <div id="article">
-            <h2>Learning How To Learn</h2>
+        <div class="mainSection">
+            <div class="article">
+                <h2>Learning How To Learn</h2>
             <hr>
             <p>
                 Before you read anything else in this article, I think it's important that you know a few things about me.
@@ -231,6 +246,11 @@
             <hr>
             <h2>What The Hell Is a "Problem", and How Do I Solve One?</em></h2>
             <hr>
+            </div>
+        </div>
+        <div class="background" id="background">
+            <div class="sunset"></div>
+            <canvas></canvas>
         </div>
     </div>
 </body>

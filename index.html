@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda's Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="mainSection">
-        <div id="header">
-            <h1>Panda's Page</h1>
-            <hr>
+    <div class="pageContainer">
+        <div class="header">
+            <p class="title">Panda's Page</p>
+            <div class="buttonRow">
+                <a href="index.html">
+                    <div class="button currentTab"><p>HOME</p></div>
+                </a>
+                <a href="articles.html">
+                    <div class="button"><p>ARTICLES</p></div>
+                </a>
+                <a href="toys.html">
+                    <div class="button"><p>TOYS</p></div>
+                </a>
+                <a href="https://github.com/thepantsupanda" target="_blank">
+                    <div class="button"><p>GITHUB</p></div>
+                </a>                
+            </div>
         </div>
-        <div id="articleList">
-            <h2>Bigger Projects:</h2>
-            <p>
+        <div class="mainSection">
+            <div class="content">
+                <h2>Hi there, I'm Panda!</h2>
+                <hr>
+                <p>
+                    I'm a programmer and general creative person, working on projects in my free time and hoping to show off my work to anyone who will see.
+                    Take a look around the site, read some articles if you'd like, and have a nice day! :)
+                </p>
+                <h2>Bigger Projects</h2>
+                <hr>
                 <ul>
                     <li>
-                        <a href="https://www.youtube.com/channel/UCBhKmTGmqVRYugLwK8hJ7ig" target="_blank">PantsuPanda</a> is a YouTube channel focused on
-                        teaching fundamental concepts to fighting game beginners. It is highly informed by my own struggles learning fighting games, and
-                        assumes that the viewer is a complete "level zero" beginner most of the time. I am <em>highly proud</em> of this body of work. <3
+                        <p>
+                            <a href="https://www.youtube.com/channel/UCBhKmTGmqVRYugLwK8hJ7ig" target="_blank">PantsuPanda</a> is a YouTube channel focused on
+                            teaching fundamental concepts to fighting game beginners. It is highly informed by my own struggles learning fighting games, and
+                            assumes that the viewer is a complete "level zero" beginner most of the time. I am <em>highly proud</em> of this body of work. <3
+                        </p>
                     </li>
                     <li>
-                        <a href="https://panty-panda.itch.io/nice-walk" target="_blank">Nice Walk</a> is a short "walking simulator" type horror game built
-                        in <a href="https://godotengine.org/" target="_blank">Godot</a>, aimed at communicating some feelings I was having after moving
-                        back to my hometown after being away for several years. It has a lot to do with transgender emotions. Check it out!
+                        <p>
+                            <a href="https://panty-panda.itch.io/nice-walk" target="_blank">Nice Walk</a> is a short "walking simulator" type horror game built
+                            in <a href="https://godotengine.org/" target="_blank">Godot</a>, aimed at communicating some feelings I was having after moving
+                            back to my hometown after being away for several years. It has a lot to do with transgender emotions. Check it out!
+                        </p>
                     </li>
                 </ul>
-            </p>
-            <h2>Written Articles:</h2>
-            <p>
-                <ul>
-                    <li>
-                        <a href="articles/learninghowtolearn">Learning How To Learn</a> (In Progress)
-                    </li>
-                </ul>
-            </p>
-            <h2>Toys:</h2>
-            <p>
-                <ul>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSTestingToys/makobubbles/" target="_blank">Mako Bubbles</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSTestingToys/canvasTesting/" target="_blank">Bouncing Balls</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSsynth/oscillator.html" target="_blank">Simple Oscillator</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSweekendproject/miniProjTwo.html" target="_blank">Palindrome Checker</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSTestingToys/JScounter/" target="_blank">Counter</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSweekendproject/miniProjOne.html" target="_blank">Color Changer</a>
-                    </li>
-                    <li>
-                        <a href="https://thepantsupanda.github.io/JSweekendproject/helloWorld.html" target="_blank">Hello World</a>
-                    </li>
-                </ul>
-            </p>
+            </div>
+        </div>
+        <div class="background" id="background">
+            <div class="imagecontainer">
+                <img src="img/sideimg.gif" id="sideimg">
+            </div>
+            <div class="sunset"></div>
+            <canvas></canvas>
         </div>
     </div>
-    <img id="sideImg" src="img/sideimg.gif">
-    <script src="scripts.js"></script>
 </body>
 </html>
