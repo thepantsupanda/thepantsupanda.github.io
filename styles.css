@@ -203,8 +203,35 @@ canvas {
     height: 100%;
 }
 
+@media (max-width: 1350px) {
+
+    .imagecontainer {
+        display: none;
+    }
+
+    .content {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 840px) {
+
+    .content {
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+}
+
 @media (max-width: 670px) {
+
+    .title {
+        font-size: 1.5rem;
+    }
+
     .button {
         font-size: 1em;
     }
+
 }
