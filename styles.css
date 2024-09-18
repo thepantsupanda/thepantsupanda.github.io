@@ -221,6 +221,11 @@ canvas {
         width: 90%;
         font-size: 1rem;
     }
+
+    .article {
+        font-size: 1rem;
+        width: 90%;
+    }
     
 }
 
