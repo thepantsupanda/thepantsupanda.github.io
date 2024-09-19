@@ -203,6 +203,8 @@ canvas {
     height: 100%;
 }
 
+/* RESPONSIVE CSS */
+
 @media (max-width: 1350px) {
 
     .imagecontainer {
