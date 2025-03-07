@@ -64,6 +64,10 @@ h2 {
     padding: 1rem;
 }
 
+h3 {
+    padding: 1rem;
+}
+
 p {
     padding: 1rem;
 }
@@ -96,6 +100,7 @@ ul {
 .title {
     font-size: 2rem;
     font-weight: 700;
+    padding: 0.5rem;
 }
 
 .buttonRow {
@@ -201,6 +206,13 @@ canvas {
 
 #sideimg {
     height: 100%;
+}
+
+/* ARTICLE IMAGES */
+.articleImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* RESPONSIVE CSS */
