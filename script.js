@@ -37,7 +37,7 @@ let circleArray = []
 
 function animate() {
 
-    // clears unneeded bubbles from the 
+    // clears unneeded bubbles from the screen
     for (let i = 0; i < circleArray.length; i++) {
         if (circleArray[i].y < 0) {
             circleArray.splice(i, 1)
@@ -46,11 +46,11 @@ function animate() {
 
     context.clearRect(0, 0, canvas.width, canvas.height)
 
-    if (Math.random() < 0.01 && circleArray.length < 15) {
+    if (Math.random() < 0.03 && circleArray.length < 30) {
         let radius = (Math.random() * 10) + 1
         let x = Math.random() * canvas.width
         let y = canvas.height + radius
-        let upVelocity = (Math.random() * -0.3) - 0.3
+        let upVelocity = (Math.random() * -0.5) - 0.5
         circleArray.push(new Circle(x, y, upVelocity, radius))
     } 
 
