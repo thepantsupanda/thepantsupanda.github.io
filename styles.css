@@ -229,6 +229,14 @@ canvas {
     
 }
 
+@media (max-width: 900px) {
+
+    .articleImage img {
+        width: 500px;
+    }
+    
+}
+
 @media (max-width: 840px) {
 
     .content {
@@ -255,10 +263,30 @@ canvas {
 
 }
 
+@media (max-width: 900px) {
+
+    .articleImage img {
+        width: 400px;
+    }
+    
+}
+
 @media (max-width: 450px) {
 
     .button {
         font-size: 0.8rem;
     }
 
+    .articleImage img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 335px) {
+
+    .articleImage img {
+        width: 200px;
+    }
+    
 }
