@@ -173,6 +173,12 @@ ul {
     border-radius: 1em;
 }
 
+.viewcounter {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
 /* BACKGROUND SECTION */
 
 .background {
@@ -225,6 +231,18 @@ canvas {
 
     .content {
         width: 70%;
+    }
+
+    .viewcounter {
+        width: 11rem;
+    }
+    
+}
+
+@media (max-width: 1240px) {
+
+    .viewcounter {
+        display: none;
     }
     
 }
